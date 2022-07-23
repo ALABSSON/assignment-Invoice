@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INVOICE</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <section>
+        <article> 
+            <h2>INVOICE</h2>
+            <div class="order">
+                <div class="order1">
+                    <div class="orderhead">Description</div>
+                    <div class="orderhead">Quantity</div>
+                    <div class="orderhead"> Price </div>
+                    <div class="orderhead"> Amount </div>
+                </div>
+                <div class="order2">
+                    <input type="text" placeholder="Input Description" id="Descr">
+                    <input type="text" placeholder="Input Quantity" id="Qty" oninput="calculate()">
+                    <input type="text" placeholder="Input Price" id="Price" oninput="calculate()">
+                    <div class="orderhead" id="Amount" oninput="calculate()"> </div>
+                </div>
+                <div class="order3">
+                    <button class="AddBtn">  ADD </button>
+                </div>
+            </div>
+            <div class="check">
+                <div class="check1">
+                    <div class="orderhead">Description</div>
+                    <div class="orderhead">Quantity</div>
+                    <div class="orderhead"> Price </div>
+                    <div class="orderhead"> Amount </div>
+                </div>
+                <div class="check2">
+                        <!-- <div class="props"> 
+                            <div class="outputProps" > duybhh </div>
+                            <div class="outputProps" > duybhh </div>
+                            <div class="outputProps" > duybhh </div>
+                            <div class="outputProps" > duybhh </div>
+                        </div> -->
+                </div>
+                <div class="preview">
+                        <button id="btnreview"> Preview </button>
+                </div>
+            </div>
+
+            <div class="check" id="preview2">
+                <article>
+                    <div class="check1">
+                        <div class="orderhead">Description</div>
+                        <div class="orderhead">Quantity</div>
+                        <div class="orderhead"> Price </div>
+                        <div class="orderhead"> Amount </div>
+                    </div>
+                    <div class="check2">
+                            <!-- <div class="props"> 
+                                <div class="outputProps" > </div>
+                            </div> -->
+                    </div>
+                    <div class="previewcomfirm">
+                            <button id="btnreview"> Print </button>
+                            <button id="btnreview"> Download PDF </button>
+                    </div>
+                </article>
+            </div>
+        </article>
+
+
+    </section>
+    
+    <script src="./JS/App.js"></script>
+</body>
+</html>
